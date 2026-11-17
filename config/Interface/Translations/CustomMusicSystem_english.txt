@@ -1,0 +1,78 @@
+; CustomMusicSystem 2.6 - English strings
+; Format: $KEY<TAB>text  (Skyrim translation file format, UTF-8)
+; One entry per built-in key; this file only overrides the text, not behaviour.
+$CMS_MENU_CATEGORY	Custom Music System
+$CMS_MENU_PAGE_VOLUME	Volume
+$CMS_MENU_PAGE_SETTINGS	Settings
+$CMS_MASTER_TITLE	Master volume
+$CMS_MASTER_HINT	One volume for the whole library. Drag the slider, or hover it and roll the wheel for 1 % steps.
+$CMS_STOPPED	Stopped
+$CMS_NOW_PLAYING	Now playing
+$CMS_LAYER_AMBIENT	Ambient layer
+$CMS_LAYER_COMBAT	Combat layer
+$CMS_NOTHING	(nothing)
+$CMS_GATE_CLOSED	Waiting for the world (output gate closed)
+$CMS_STATUS_OK	Running
+$CMS_MIXER_TITLE	Volume
+$CMS_MIXER_HINT	Every track plays at this volume; the value is stored in the mixer file.
+$CMS_GROUP_COUNT	groups
+$CMS_TRACK_COUNT	tracks
+$CMS_NO_TRACKS	The library is empty. Place .xwm files in Data\Music\<event folder>\ and restart the game.
+$CMS_BTN_ALL_FULL	Reset to 100 %
+$CMS_BTN_SAVE	Save now
+$CMS_EDIT_HINT	Changes are written to disk about one second after the last edit.
+$CMS_LIB_TITLE	Library
+$CMS_HINT_LEGACY_MIXER	Per-folder and per-track volumes from an older mixer file were discarded; one master volume applies now.
+$CMS_ENABLE_MUSIC	Enable music
+$CMS_ENABLE_HINT	Off = this plugin stops and the vanilla music takes the context back. The master volume is kept.
+$CMS_SEC_TRANSITION	Crossfades
+$CMS_SEC_SWITCH	Track switching
+$CMS_SEC_COMBAT	Combat
+$CMS_SEC_LIBRARY	Library
+$CMS_SEC_VANILLA	Vanilla music
+$CMS_SEC_INTERFACE	Interface
+$CMS_LBL_MIXER_AUTOSAVE	Autosave volume
+$CMS_LBL_FADE_LOCATION	Location crossfade
+$CMS_LBL_FADE_COMBAT_IN	Combat layer fade-in
+$CMS_LBL_FADE_COMBAT_OUT	Combat layer fade-out
+$CMS_LBL_HANDBACK_FADE	Vanilla hand-back fade
+$CMS_LBL_COMBAT_HOLD	Combat layer hold
+$CMS_LBL_WORLD_SETTLE	Start delay after load
+$CMS_LBL_MIN_PLAY	Minimum play time
+$CMS_LBL_SWITCH_SETTLE	Switch settle time
+$CMS_LBL_SWITCH_COOLDOWN	Switch interval floor
+$CMS_LBL_SHEATHE_ENDS_COMBAT	Sheathing ends combat
+$CMS_LBL_COMBAT_DUCK	Ambient volume in combat
+$CMS_LBL_DUCK_DIALOGUE	Attenuate during dialogue
+$CMS_LBL_DIALOGUE_DUCK	Ambient volume in dialogue
+$CMS_LBL_RECENT	Repeat-suppression window
+$CMS_LBL_MIN_TRACKS	Minimum pool size
+$CMS_LBL_KEEP_VANILLA	Keep vanilla music
+$CMS_LBL_LANGUAGE	Menu language
+$CMS_VANILLA_KEPT	Vanilla: kept (plays alongside this plugin)
+$CMS_VANILLA_TAKEN	Vanilla: taken over (this plugin is playing)
+$CMS_VANILLA_FALLBACK	Vanilla: hand-back (no track for this event or location)
+$CMS_LANG_EN	English
+$CMS_LANG_ZH	Chinese
+$CMS_BTN_SAVE_CFG	Save to INI
+$CMS_BTN_RELOAD_CFG	Reload from INI
+$CMS_BTN_DEFAULTS	Defaults
+$CMS_HINT_LIVE	Changes apply immediately; Save writes them to the INI.
+$CMS_HINT_WHEEL	Hover a slider and roll the wheel to fine-tune it.
+$CMS_HINT_SAVED	Saved
+$CMS_HINT_SAVE_FAILED	Save failed - see the log
+$CMS_HINT_SWITCH_GUARD	A new context must hold for the settle time, the current track gets its minimum play time, and nothing new starts over a running crossfade.
+$CMS_HINT_COMBAT_DUCK	1.00 = leave it untouched (both layers audible); 0.00 = let the fight replace it. The default only lowers the ambient layer - the track that is already playing is never cut.
+$CMS_HINT_VANILLA_HANDOVER	Off (default) = takeover: where the library has a matching track the vanilla layer is held at 0 %, where it has none the vanilla music is handed the context back. On = the vanilla music plays alongside.
+$CMS_HINT_LANG_BUILD	Decided by the installed build: the English and the Chinese version are two separate DLLs.
+$CMS_REASON_DUEL	Confirmed duel (you struck, they struck back)
+$CMS_REASON_AMBUSH	Ambush (they started it)
+$CMS_REASON_SUSTAINED	Prolonged fight (hostile stayed engaged)
+$CMS_REASON_NONE	No fight
+$CMS_LOG_REGISTERED	volume page registered in the SKSE menu framework
+$CMS_LOG_NO_FRAMEWORK	SKSE Menu Framework not found - the pages are skipped (the mixer file still applies)
+$CMS_LOG_FRAMEWORK_OLD	SKSE Menu Framework found but its imgui exports are incomplete - pages skipped
+$CMS_LOG_MIXER_LOADED	mixer loaded:
+$CMS_LOG_MIXER_MISSING	no mixer file yet, starting from defaults:
+$CMS_LOG_CFG_SAVED	settings written to
+$CMS_LOG_CFG_FAILED	could not write settings to
